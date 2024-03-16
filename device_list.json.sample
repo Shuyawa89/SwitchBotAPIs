@@ -1,0 +1,14 @@
+{
+  "statusCode": 100,
+  "body": {
+    "deviceList": [
+      {
+        "deviceId": "xxxxxxxxxxxxx",
+        "deviceName": "ロボット掃除機",
+        "deviceType": "WoSweeperMini",
+        "enableCloudService": true,
+        "hubDeviceId": ""
+      }],
+  },
+  "message": "success"
+}
