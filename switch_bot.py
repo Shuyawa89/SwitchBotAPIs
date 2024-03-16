@@ -66,7 +66,7 @@ class SwitchBot:
 
             print(responce.text)
             device_list = json.loads(responce.text)
-            with open('device_list.json', 'w') as f:
+            with open('device_list.json', 'w', encoding='utf-8') as f:
                 json.dump(device_list, f, ensure_ascii=False, indent=2)
 
         except requests.exceptions.RequestException as e:
