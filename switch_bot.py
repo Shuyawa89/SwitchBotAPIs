@@ -14,6 +14,7 @@ class SwitchBot:
         token (str): SwitchBot APIのトークン
         secret (str): SwitchBot APIのシークレット
     """
+
     def __init__(self, token: str, secret: str):
         self.token = token
         self.secret = secret
@@ -28,6 +29,7 @@ class SwitchBot:
         t (str): タイムスタンプ
         nonce (str): ランダムな文字列
     """
+
     def make_sign(self):
         nonce = str(uuid.uuid4())
         t = int(round(time.time() * 1000))
@@ -53,8 +55,9 @@ class SwitchBot:
     Returns:
         None
     """
+
     def get_device_list(self):
-        url = self.base_url + 'device'
+        url = self.base_url + 'devices'
         headers = self.make_headers()
 
         try:
